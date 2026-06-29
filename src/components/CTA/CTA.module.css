@@ -1,0 +1,203 @@
+.ctaSection {
+  position: relative;
+  z-index: 1;
+  padding: 16px 0 64px;
+  display: flex;
+  justify-content: center;
+  animation: slideUp 0.6s ease-out 0.3s both;
+}
+
+.ctaLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 700px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.ctaLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.ctaRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 40px;
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #1A1A2E;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-base);
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: shimmer 3s infinite;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+}
+
+.ctaButton:active {
+  transform: translateY(0);
+}
+
+.ctaIcon {
+  font-size: 20px;
+}
+
+.ctaTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.ctaSubText {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1A1A2E;
+  opacity: 0.85;
+}
+
+.ctaHint {
+  font-size: 12px;
+  margin-top: 8px;
+  color: var(--color-text-muted);
+}
+
+.ctaHintStar {
+  color: var(--color-accent);
+}
+
+/* --- Price Table --- */
+.priceSection {
+  width: 100%;
+  max-width: 450px;
+  margin: 16px 0 0;
+}
+
+.priceTitle {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-align: left;
+  margin-bottom: 8px;
+  margin-left: 4px;
+}
+
+.priceGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.priceCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 6px;
+  background: var(--color-bg-cell);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  transition: var(--transition-base);
+}
+
+.priceCard:hover {
+  border-color: var(--color-primary);
+  background: var(--color-bg-cell-hover);
+}
+
+.priceSize {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-primary-light);
+}
+
+.priceCells {
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.priceAmount {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* --- QR Code Section --- */
+.qrLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: var(--color-bg-cell);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.qrLink:hover {
+  border-color: var(--color-primary);
+  background: var(--color-bg-cell-hover);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.qrImage {
+  border-radius: var(--border-radius-md);
+}
+
+.qrCaption {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primary-light);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 700px) {
+  .ctaLayout {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .ctaButton {
+    padding: 12px 32px;
+  }
+
+  .priceGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

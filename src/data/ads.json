@@ -1,0 +1,34 @@
+{
+  "ads": [
+    {
+      "id": 1,
+      "brand": "달콤베이커리",
+      "startCell": 45,
+      "width": 3,
+      "height": 2,
+      "image": "/ads/sample-a.png",
+      "url": "https://example.com/bakery",
+      "description": "매일 갓 구운 빵, 달콤베이커리"
+    },
+    {
+      "id": 2,
+      "brand": "코드랩 CODELAB",
+      "startCell": 135,
+      "width": 4,
+      "height": 4,
+      "image": "/ads/sample-b.png",
+      "url": "https://example.com/codelab",
+      "description": "개발자를 위한 코워킹 스페이스"
+    },
+    {
+      "id": 3,
+      "brand": "모닝브루",
+      "startCell": 1,
+      "width": 2,
+      "height": 2,
+      "image": "/ads/sample-c.png",
+      "url": "https://example.com/morningbrew",
+      "description": "프리미엄 스페셜티 커피"
+    }
+  ]
+}

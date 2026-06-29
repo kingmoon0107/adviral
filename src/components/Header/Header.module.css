@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.headerInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-base);
+}
+
+.brandLink:hover {
+  opacity: 0.85;
+}
+
+.brandLink:hover .logo {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-border);
+  transition: var(--transition-base);
+}
+
+.logo:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  display: none;
+}
+
+.stats {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  padding: 4px 12px;
+  background: var(--color-bg-cell);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+}
+
+.statDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.statDotSold {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.priceTag {
+  font-size: 12px;
+  color: var(--color-accent);
+  font-weight: 600;
+  padding: 4px 12px;
+  background: rgba(0, 230, 118, 0.08);
+  border: 1px solid rgba(0, 230, 118, 0.2);
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .headerInner {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .stats {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .statItem, .priceTag {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+}
