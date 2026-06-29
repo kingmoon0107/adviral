@@ -93,7 +93,7 @@ export default function AdGrid() {
 
   // Render empty cells
   const emptyCells = useMemo(() => {
-    const cells: JSX.Element[] = [];
+    const cells: React.ReactNode[] = [];
     for (let cellNum = 1; cellNum <= TOTAL_CELLS; cellNum++) {
       if (occupiedSet.has(cellNum)) continue;
       const { row, col } = cellToRowCol(cellNum);
