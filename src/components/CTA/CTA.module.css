@@ -190,7 +190,26 @@
 @media (max-width: 700px) {
   .ctaLayout {
     flex-direction: column;
-    gap: 24px;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .ctaLeft, .ctaRight {
+    align-items: center;
+  }
+
+  .ctaTextContainer {
+    align-items: center;
+    text-align: center;
+  }
+
+  .priceSection {
+    margin: 16px auto 0;
+  }
+
+  .priceTitle {
+    text-align: center;
+    margin-left: 0;
   }
   
   .ctaButton {
