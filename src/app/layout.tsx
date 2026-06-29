@@ -15,6 +15,11 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    process.env.URL || // Netlify URL
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://adviral.netlify.app")
+  ),
   title: "ad.viral | 애드바이럴 광고판",
   description:
     "칸당 1,000원! 20×20 그리드 광고판에서 당신의 브랜드를 알리세요. 소상공인·스타트업을 위한 초저가 디지털 광고 플랫폼.",
@@ -22,7 +27,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ad.viral | 애드바이럴 광고판",
     description: "칸당 1,000원! 20×20 디지털 광고판에 브랜드를 게시하세요.",
+    url: "/",
     siteName: "ad.viral",
+    locale: "ko_KR",
     type: "website",
   },
 };
