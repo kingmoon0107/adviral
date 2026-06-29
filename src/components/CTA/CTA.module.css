@@ -196,15 +196,23 @@
 
   .ctaLeft, .ctaRight {
     align-items: center;
+    width: 100%;
   }
 
   .ctaTextContainer {
     align-items: center;
     text-align: center;
   }
+  
+  .ctaHint {
+    text-align: center;
+  }
 
   .priceSection {
     margin: 16px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .priceTitle {
@@ -218,5 +226,6 @@
 
   .priceGrid {
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
   }
 }
