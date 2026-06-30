@@ -19,6 +19,16 @@
       "image": "/ads/원시력테스트케이.png",
       "url": "https://primal-type.com/",
       "description": "원시력테스트케이"
+    },
+    {
+      "id": 3,
+      "brand": "웹스탈지아",
+      "startCell": 41,
+      "width": 7,
+      "height": 3,
+      "image": "/ads/웹스탈지아.png",
+      "url": "https://m.blog.naver.com/kingninano/224212471487",
+      "description": "웹스탈지아"
     }
   ]
 }
