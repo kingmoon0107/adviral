@@ -9,6 +9,16 @@
       "image": "/ads/광고판 샘플.png",
       "url": "https://www.instagram.com/ad.viral",
       "description": "ad.viral 공식 인스타그램"
+    },
+    {
+      "id": 2,
+      "brand": "원시력테스트케이",
+      "startCell": 283,
+      "width": 3,
+      "height": 3,
+      "image": "/ads/원시력테스트케이.png",
+      "url": "https://primal-type.com/",
+      "description": "원시력테스트케이"
     }
   ]
 }
